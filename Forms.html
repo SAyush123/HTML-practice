@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        background-color: #f4f4f4;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      label,
+      input {
+        display: block;
+        margin: 10px;
+      }
+      .inline {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend><h2>Event Registration Form</h2></legend>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name here"
+        />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email here"
+        />
+        <label for="phone">Phone No: </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Enter your phone number"
+        />
+        <label for="occupation" class="inline">Occupation: </label>
+        <select name="occupation" id="occupation" class="inline">
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="gender">Gender: </label>
+        <label for="male" class="inline">Male</label>
+        <input type="radio" name="gender" id="male" class="inline" />
+        <label for="female" class="inline">Female</label>
+        <input type="radio" name="gender" id="female" class="inline" />
+        <label for="other" class="inline">Other</label>
+        <input type="radio" name="gender" id="other" class="inline" />
+        <label for="interest">Topics of Interest: </label>
+        <label for="html" class="inline">HTML</label>
+        <input type="checkbox" name="interest" id="html" class="inline" />
+        <label for="css" class="inline">CSS</label>
+        <input type="checkbox" name="interest" id="css" class="inline" />
+        <label for="js" class="inline">Javascript</label>
+        <input type="checkbox" name="interest" id="js" class="inline" />
+        <label for="comments">Comments: </label>
+        <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        <input type="submit" name="register" id="register" value="Register" />
+      </fieldset>
+    </form>
+  </body>
+</html>
